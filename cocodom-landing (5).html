@@ -720,6 +720,350 @@ body{padding-bottom:85px!important}
         </div>
     </div>
 
+<!-- Блок Комплектация -->
+<section class="py-16 bg-gradient-to-b from-white to-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Заголовок секции -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                Полная комплектация "под ключ"
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Все включено в стоимость — от металлокаркаса до системы "умный дом". 
+                Просто привозим и подключаем за 1 день.
+            </p>
+        </div>
+
+        <!-- Табы для переключения между категориями -->
+        <div class="flex justify-center mb-8 flex-wrap gap-2">
+            <button onclick="showTab('tech')" id="tab-tech" class="tab-btn px-6 py-3 bg-green-600 text-white rounded-lg font-medium transition-all">
+                Конструкция и инженерия
+            </button>
+            <button onclick="showTab('interior')" id="tab-interior" class="tab-btn px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300 transition-all">
+                Интерьер и оборудование
+            </button>
+        </div>
+
+        <!-- Контент табов -->
+        <!-- Технические характеристики -->
+        <div id="tech-content" class="tab-content">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Каркас -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-green-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Металлический каркас</h3>
+                            <p class="text-gray-600 text-sm">Прочный оцинкованный каркас обеспечивает долговечность и идеальную геометрию дома</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Утепление -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Утепление ППУ 8 см</h3>
+                            <p class="text-gray-600 text-sm">Современная теплоизоляция с ячейкой 70/30. Комфортная температура до -30°C</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Фасад -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-purple-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Алюминиевые панели</h3>
+                            <p class="text-gray-600 text-sm">Порошковое покрытие, не выцветает, защита от влаги, современный вид</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Остекление -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Панорамные окна</h3>
+                            <p class="text-gray-600 text-sm">Гнутые стеклопакеты с автозатемнением для приватности и эстетики</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Электричество -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Электроснабжение 5 кВт</h3>
+                            <p class="text-gray-600 text-sm">LED-освещение, розетки с USB, защита от перегрузок</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отопление -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-orange-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Система отопления</h3>
+                            <p class="text-gray-600 text-sm">Электрические конвекторы и теплые полы для круглогодичного комфорта</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Водоснабжение -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-cyan-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Водоснабжение</h3>
+                            <p class="text-gray-600 text-sm">Внутренняя разводка PPR труб, возможна установка фильтров и бойлера</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Канализация -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Канализация</h3>
+                            <p class="text-gray-600 text-sm">Система ПВХ с продуманным уклоном, подключение к септику</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Вентиляция -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-teal-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Вентиляция</h3>
+                            <p class="text-gray-600 text-sm">Приточно-вытяжная система для свежего воздуха и комфортного микроклимата</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Интерьер и оборудование -->
+        <div id="interior-content" class="tab-content hidden">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Кухонный блок -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Кухонный блок</h3>
+                            <p class="text-gray-600 text-sm">Компактная кухня с варочной поверхностью, мойкой и местом под холодильник</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Спальня -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-pink-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Спальня</h3>
+                            <p class="text-gray-600 text-sm">Двуспальная кровать с мягким изголовьем в минималистичном интерьере</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Санузел -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Санузел</h3>
+                            <p class="text-gray-600 text-sm">Душевая кабина, унитаз, раковина, бойлер и зеркальный шкаф с подсветкой</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Гостевая зона -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-green-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Гостевая зона</h3>
+                            <p class="text-gray-600 text-sm">Пространство для отдыха с диваном-кроватью и настенным телевизором</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Освещение -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-yellow-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Освещение</h3>
+                            <p class="text-gray-600 text-sm">LED светильники с регулировкой яркости и декоративной подсветкой</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Хранение -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-purple-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Системы хранения</h3>
+                            <p class="text-gray-600 text-sm">Встроенные шкафы и антресоли для рационального использования пространства</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Полы -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Напольные покрытия</h3>
+                            <p class="text-gray-600 text-sm">Кварцвинил в жилой зоне и плитка в санузле с долгим сроком службы</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Техника -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-red-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Бытовая техника</h3>
+                            <p class="text-gray-600 text-sm">Варочная панель, холодильник, микроволновка с возможностью расширения</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Умный дом -->
+                <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-indigo-100 p-3 rounded-lg">
+                            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <div class="ml-4 flex-1">
+                            <h3 class="font-bold text-gray-900 mb-2">Система "Умный дом"</h3>
+                            <p class="text-gray-600 text-sm">Управление освещением, климатом и электропитанием через приложение</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA под комплектацией -->
+        <div class="mt-12 text-center">
+            <p class="text-lg text-gray-700 mb-6">
+                Хотите увидеть всё это вживую? 90% клиентов принимают решение после визита на производство
+            </p>
+            <button onclick="openFactoryModal()" class="inline-flex items-center justify-center px-8 py-4 text-lg font-medium text-white bg-green-600 rounded-lg hover:bg-green-700 transition-all transform hover:scale-105">
+                Записаться на экскурсию по заводу
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript для табов -->
+<script>
+function showTab(tab) {
+    // Скрываем все контенты табов
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => content.classList.add('hidden'));
+    
+    // Сбрасываем стили всех кнопок табов
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => {
+        btn.classList.remove('bg-green-600', 'text-white');
+        btn.classList.add('bg-gray-200', 'text-gray-700');
+    });
+    
+    // Показываем выбранный контент
+    document.getElementById(tab + '-content').classList.remove('hidden');
+    
+    // Активируем выбранную кнопку
+    const activeBtn = document.getElementById('tab-' + tab);
+    activeBtn.classList.remove('bg-gray-200', 'text-gray-700');
+    activeBtn.classList.add('bg-green-600', 'text-white');
+}
+</script>
+
     <!-- ПРОЦЕСС РАБОТЫ -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
